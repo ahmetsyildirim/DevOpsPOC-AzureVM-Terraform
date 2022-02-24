@@ -21,7 +21,7 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'init'
-    backendServiceArm: 'MPC-Sandbox-MPN-AH (de9faefb-476e-489b-a289-ab367bcec768)'
+    backendServiceArm: $(backendServiceArm)
     backendAzureRmResourceGroupName: 'AzureDevOpsPOC'
     backendAzureRmStorageAccountName: 'devopsvmterraformstroage'
     backendAzureRmContainerName: 'vmterraformstate'
@@ -31,4 +31,4 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'plan'
-    environmentServiceNameAzureRM: 'MPC-Sandbox-MPN-AH (de9faefb-476e-489b-a289-ab367bcec768)'
+    environmentServiceNameAzureRM: $(environmentServiceArm)
