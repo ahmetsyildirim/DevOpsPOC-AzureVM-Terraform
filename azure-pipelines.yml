@@ -30,6 +30,8 @@ steps:
     backendAzureRmStorageAccountName: 'devopsvmterraformstroage'
     backendAzureRmContainerName: 'vmterraformstate'
     backendAzureRmKey: 'terraform.tfstate'
+  name: terraforminit
+  displayName: Terraform Initialize
 
 - task: TerraformTaskV2@2
   inputs:
