@@ -21,7 +21,7 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'init'
-    backendServiceArm: ${backendServiceArm}
+    backendServiceArm: $(backendServiceArm)
     backendAzureRmResourceGroupName: 'AzureDevOpsPOC'
     backendAzureRmStorageAccountName: 'devopsvmterraformstroage'
     backendAzureRmContainerName: 'vmterraformstate'
