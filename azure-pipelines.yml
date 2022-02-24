@@ -42,3 +42,9 @@ steps:
     command: 'plan'
     environmentServiceNameAzureRM: $(environmentServiceArm)
     commandOptions: '-input=false -out=$(Build.BinariesDirectory)/tfplan'
+
+- task: TerraformTaskV2@2
+  inputs:
+    provider: 'azurerm'
+    command: 'apply'
+    environmentServiceNameAzureRM: $(environmentServiceArm)
