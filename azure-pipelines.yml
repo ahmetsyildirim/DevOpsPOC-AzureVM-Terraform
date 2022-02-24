@@ -41,3 +41,4 @@ steps:
     provider: 'azurerm'
     command: 'plan'
     environmentServiceNameAzureRM: $(environmentServiceArm)
+    commandOptions: '-input=false -out=$(Build.BinariesDirectory)/tfplan'
